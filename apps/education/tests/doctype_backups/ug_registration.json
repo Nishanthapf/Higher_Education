@@ -1,0 +1,172 @@
+{
+  "Student Details": {
+    "Application No": { "type": "text", "required": true },
+    "Programme/Major": { "type": "text" },
+    "Name of the student": { "type": "text", "required": true },
+    "Final Campus Offered": { "type": "text" },
+    "Date of Birth": { "type": "date", "required": true },
+    "Gender": {
+      "type": "select",
+      "options": ["Female", "Male", "Others"],
+      "required": true
+    },
+    "Blood Group": {
+      "type": "select",
+      "options": ["A+", "B+", "A-", "B-", "O+", "AB+", "AB-", "O-"]
+    }
+  },
+
+  "Communication Address": {
+    "Country": { "type": "dropdown" },
+    "State": { "type": "dropdown" },
+    "District": { "type": "dropdown" },
+    "City": { "type": "text" },
+    "PIN": { "type": "number", "label": "Postal Code" },
+    "House No, Street": { "type": "text" }
+  },
+
+  "Contact Information": {
+    "Updated mobile number": { "type": "phone" },
+    "Emergency Contact Number": { "type": "phone" },
+    "ABC/APAAR ID": { "type": "text" },
+    "Nationality": { "type": "text" },
+    "Domicile": { "type": "text" },
+    "Preferred Name For APU Email Id": { "type": "text" },
+    "Would you like to apply for the University hostel accommodation?": {
+      "type": "select",
+      "options": ["Yes", "No"]
+    }
+  },
+
+  "Application Details": {
+    "Nationality": { "type": "text" },
+    "Domicile": { "type": "text" },
+    "Gender": {
+      "type": "select",
+      "options": ["Female", "Male", "Others"]
+    },
+    "Have you applied to us previously?": {
+      "type": "select",
+      "options": ["Yes", "No"]
+    },
+    "Programme Name": { "type": "text" },
+    "Year of admission": { "type": "year" },
+    "Programme Preference 1": { "type": "text" },
+    "Campus (Programme Preference 1)": { "type": "text" },
+    "Programme Preference 2": { "type": "text" },
+    "Campus (Programme Preference 2)": { "type": "text" },
+    "Preferred Test Center": { "type": "text" },
+    "Preferred Interview Center": { "type": "text" },
+    "Consider any campus": { "type": "text" },
+    "Would you be open to be considered for admission in any campus": {
+      "type": "select",
+      "options": ["Yes", "No"]
+    }
+  },
+
+  "Father's/Guardian's Details": {
+    "First Name": { "type": "text" },
+    "Last Name": { "type": "text" },
+    "Relationship Type": {
+      "type": "dropdown",
+      "options": ["Father", "Mother", "Guardian", "Other"]
+    },
+    "Work/Occupation": { "type": "text" },
+    "Organization (if applicable)": { "type": "text" },
+    "Designation": { "type": "text" },
+    "Location of Work": { "type": "text" },
+    "Mobile Phone": { "type": "phone" },
+    "Email Id": { "type": "email" }
+  },
+
+  "Mother's Details": {
+    "First Name": { "type": "text" },
+    "Last Name": { "type": "text" },
+    "Relationship Type": {
+      "type": "dropdown",
+      "options": ["Father", "Mother", "Guardian", "Other"]
+    },
+    "Work/Occupation": { "type": "text" },
+    "Organization (if applicable)": { "type": "text" },
+    "Designation": { "type": "text" },
+    "Location of Work": { "type": "text" },
+    "Mobile Phone": { "type": "phone" },
+    "Email Id": { "type": "email" }
+  },
+
+  "Local Guardian's Details": {
+    "First Name": { "type": "text" },
+    "Last Name": { "type": "text" },
+    "Relationship Type": {
+      "type": "dropdown",
+      "options": ["Father", "Mother", "Guardian", "Other"]
+    },
+    "Work/Occupation": { "type": "text" },
+    "Organization (if applicable)": { "type": "text" },
+    "Designation": { "type": "text" },
+    "Location of Work": { "type": "text" },
+    "Mobile Phone": { "type": "phone" },
+    "Email Id": { "type": "email" }
+  },
+
+  "Education History": {
+    "education": [
+      {
+        "Class": {
+          "type": "dropdown",
+          "options": ["Class 10", "Class 12", "UG", "PG"]
+        },
+        "Roll Number": { "type": "text" },
+        "Board": { "type": "dropdown", "options": ["CBSE", "ICSE", "State Board", "IB", "Other"] },
+        "Passing Year": { "type": "year" },
+        "Percentage/Grade": { "type": "text" },
+        "Overall Percentage": { "type": "number", "suffix": "%" }
+      }
+    ],
+    "note": "Repeatable block - usually 2 or more entries expected"
+  },
+
+  "Medical History": {
+    "Are you under treatment for any chronic health issues?": {
+      "type": "select",
+      "options": ["Yes", "No"]
+    },
+    "Do you currently have / have you previously experienced any mental health concerns?": {
+      "type": "select",
+      "options": ["Yes", "No"]
+    },
+    "Contact details of Physician/Psychiatrist/Therapist": { "type": "text" },
+    "Are you allergic to any medication? Please mention the details": { "type": "textarea" },
+    "Have you undergone any surgery in the past?": {
+      "type": "select",
+      "options": ["Yes", "No"]
+    }
+  },
+
+  "Life Insurance Policy – Nomination Details": {
+    "Name of Nominee": { "type": "text" },
+    "Date of Birth": { "type": "date" },
+    "Relationship with Student": {
+      "type": "dropdown",
+      "options": ["Father", "Mother", "Spouse", "Other"]
+    },
+    "Address of the Nominee": { "type": "textarea" }
+  },
+
+  "Payment Details": {
+    "application_fee": { "type": "number", "currency": true },
+    "Currency": { "type": "text", "default": "INR" },
+    "payment_status": {
+      "type": "select",
+      "options": ["Paid", "Pending", "Failed", "Refunded"]
+    },
+    "transaction_id": { "type": "text" },
+    "payment_date": { "type": "datetime" },
+    "payment_mode": {
+      "type": "select",
+      "options": ["Online", "DD", "Cash", "Bank Transfer", "UPI"]
+    },
+    "register year": { "type": "year" },
+    "registered batch": { "type": "text" }
+  }
+}

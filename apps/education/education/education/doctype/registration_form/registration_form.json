@@ -1,0 +1,585 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-04 16:00:46.857935",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_details_section",
+  "application_no",
+  "programme_major",
+  "student_name",
+  "final_campus_offered",
+  "date_of_birth",
+  "gender",
+  "blood_group",
+  "communication_section",
+  "country",
+  "state",
+  "district",
+  "city",
+  "pin",
+  "house_street",
+  "updated_mobile",
+  "emergency_contact",
+  "abc_id",
+  "nationality",
+  "domicile",
+  "preferred_email_name",
+  "apply_for_hostel",
+  "need_accommodation",
+  "application_details_section",
+  "app_nationality",
+  "app_domicile",
+  "app_gender",
+  "applied_previously",
+  "programme_name",
+  "year_of_admission",
+  "programme_preference_1",
+  "campus_preference_1",
+  "programme_preference_2",
+  "campus_preference_2",
+  "test_center",
+  "interview_center",
+  "consider_any_campus",
+  "father_section",
+  "father_first_name",
+  "father_last_name",
+  "father_relationship",
+  "father_occupation",
+  "father_org",
+  "father_designation",
+  "father_location",
+  "father_phone",
+  "father_email",
+  "mother_section",
+  "mother_first_name",
+  "mother_last_name",
+  "mother_relationship",
+  "mother_occupation",
+  "mother_org",
+  "mother_designation",
+  "mother_location",
+  "mother_phone",
+  "mother_email",
+  "local_guardian_section",
+  "lg_first_name",
+  "lg_last_name",
+  "lg_relationship",
+  "lg_occupation",
+  "lg_org",
+  "lg_designation",
+  "lg_location",
+  "lg_phone",
+  "lg_email",
+  "education_section",
+  "education_table",
+  "medical_section",
+  "chronic_issues",
+  "mental_health",
+  "physician_contact",
+  "medication_allergy",
+  "past_surgery",
+  "insurance_section",
+  "nominee_name",
+  "nominee_dob",
+  "nominee_relationship",
+  "nominee_address",
+  "payment_section",
+  "application_fee",
+  "payment_status",
+  "transaction_id",
+  "payment_date",
+  "payment_mode",
+  "register_year",
+  "registered_batch"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_details_section",
+   "fieldtype": "Section Break",
+   "label": "Student Details"
+  },
+  {
+   "fieldname": "application_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Application No"
+  },
+  {
+   "fieldname": "programme_major",
+   "fieldtype": "Data",
+   "label": "Programme / Major"
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Name of the Student"
+  },
+  {
+   "fieldname": "final_campus_offered",
+   "fieldtype": "Data",
+   "label": "Final Campus Offered"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Female\nMale\nOthers"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "A+\nB+\nA-\nB-\nO+\nAB+\nAB-"
+  },
+  {
+   "fieldname": "communication_section",
+   "fieldtype": "Section Break",
+   "label": "Communication Address"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "Country",
+   "options": "India\nOther"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Select",
+   "label": "State"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Select",
+   "label": "District"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "pin",
+   "fieldtype": "Int",
+   "label": "PIN Code"
+  },
+  {
+   "fieldname": "house_street",
+   "fieldtype": "Data",
+   "label": "House No / Street"
+  },
+  {
+   "fieldname": "updated_mobile",
+   "fieldtype": "Phone",
+   "label": "Updated Mobile Number"
+  },
+  {
+   "fieldname": "emergency_contact",
+   "fieldtype": "Phone",
+   "label": "Emergency Contact Number"
+  },
+  {
+   "fieldname": "abc_id",
+   "fieldtype": "Data",
+   "label": "ABC/APAAR ID"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "domicile",
+   "fieldtype": "Data",
+   "label": "Domicile"
+  },
+  {
+   "fieldname": "preferred_email_name",
+   "fieldtype": "Data",
+   "label": "Preferred Name for APU Email ID"
+  },
+  {
+   "fieldname": "apply_for_hostel",
+   "fieldtype": "Select",
+   "label": "Would you like to apply for University Hostel?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "need_accommodation",
+   "fieldtype": "Select",
+   "label": "Accommodation Needed?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "application_details_section",
+   "fieldtype": "Section Break",
+   "label": "Application Details"
+  },
+  {
+   "fieldname": "app_nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "app_domicile",
+   "fieldtype": "Data",
+   "label": "Domicile"
+  },
+  {
+   "fieldname": "app_gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOthers"
+  },
+  {
+   "fieldname": "applied_previously",
+   "fieldtype": "Select",
+   "label": "Have you applied previously?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "programme_name",
+   "fieldtype": "Data",
+   "label": "Programme Name"
+  },
+  {
+   "fieldname": "year_of_admission",
+   "fieldtype": "Int",
+   "label": "Year of Admission"
+  },
+  {
+   "fieldname": "programme_preference_1",
+   "fieldtype": "Data",
+   "label": "Programme Preference 1"
+  },
+  {
+   "fieldname": "campus_preference_1",
+   "fieldtype": "Data",
+   "label": "Campus (Preference 1)"
+  },
+  {
+   "fieldname": "programme_preference_2",
+   "fieldtype": "Data",
+   "label": "Programme Preference 2"
+  },
+  {
+   "fieldname": "campus_preference_2",
+   "fieldtype": "Data",
+   "label": "Campus (Preference 2)"
+  },
+  {
+   "fieldname": "test_center",
+   "fieldtype": "Data",
+   "label": "Preferred Test Center"
+  },
+  {
+   "fieldname": "interview_center",
+   "fieldtype": "Data",
+   "label": "Preferred Interview Center"
+  },
+  {
+   "fieldname": "consider_any_campus",
+   "fieldtype": "Select",
+   "label": "Consider Any Campus?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "father_section",
+   "fieldtype": "Section Break",
+   "label": "Father / Guardian Details"
+  },
+  {
+   "fieldname": "father_first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "father_last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "father_relationship",
+   "fieldtype": "Select",
+   "label": "Relationship",
+   "options": "Father\nMother\nGuardian\nOther"
+  },
+  {
+   "fieldname": "father_occupation",
+   "fieldtype": "Data",
+   "label": "Work / Occupation"
+  },
+  {
+   "fieldname": "father_org",
+   "fieldtype": "Data",
+   "label": "Organization"
+  },
+  {
+   "fieldname": "father_designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "father_location",
+   "fieldtype": "Data",
+   "label": "Location of Work"
+  },
+  {
+   "fieldname": "father_phone",
+   "fieldtype": "Phone",
+   "label": "Mobile Phone"
+  },
+  {
+   "fieldname": "father_email",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "mother_section",
+   "fieldtype": "Section Break",
+   "label": "Mother's Details"
+  },
+  {
+   "fieldname": "mother_first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "mother_last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "mother_relationship",
+   "fieldtype": "Select",
+   "label": "Relationship",
+   "options": "Father\nMother\nGuardian\nOther"
+  },
+  {
+   "fieldname": "mother_occupation",
+   "fieldtype": "Data",
+   "label": "Work / Occupation"
+  },
+  {
+   "fieldname": "mother_org",
+   "fieldtype": "Data",
+   "label": "Organization"
+  },
+  {
+   "fieldname": "mother_designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "mother_location",
+   "fieldtype": "Data",
+   "label": "Location of Work"
+  },
+  {
+   "fieldname": "mother_phone",
+   "fieldtype": "Phone",
+   "label": "Mobile Phone"
+  },
+  {
+   "fieldname": "mother_email",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "local_guardian_section",
+   "fieldtype": "Section Break",
+   "label": "Local Guardian Details"
+  },
+  {
+   "fieldname": "lg_first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "lg_last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "lg_relationship",
+   "fieldtype": "Select",
+   "label": "Relationship",
+   "options": "Father\nMother\nGuardian\nOther"
+  },
+  {
+   "fieldname": "lg_occupation",
+   "fieldtype": "Data",
+   "label": "Work / Occupation"
+  },
+  {
+   "fieldname": "lg_org",
+   "fieldtype": "Data",
+   "label": "Organization"
+  },
+  {
+   "fieldname": "lg_designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "lg_location",
+   "fieldtype": "Data",
+   "label": "Location of Work"
+  },
+  {
+   "fieldname": "lg_phone",
+   "fieldtype": "Phone",
+   "label": "Mobile Phone"
+  },
+  {
+   "fieldname": "lg_email",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "education_section",
+   "fieldtype": "Section Break",
+   "label": "Education History"
+  },
+  {
+   "fieldname": "education_table",
+   "fieldtype": "Data",
+   "label": "Education Details",
+   "options": "Education History Child"
+  },
+  {
+   "fieldname": "medical_section",
+   "fieldtype": "Section Break",
+   "label": "Medical History"
+  },
+  {
+   "fieldname": "chronic_issues",
+   "fieldtype": "Select",
+   "label": "Under treatment for chronic issues?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "mental_health",
+   "fieldtype": "Select",
+   "label": "Mental health concerns (current/past)?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "physician_contact",
+   "fieldtype": "Small Text",
+   "label": "Physician / Psychiatrist Contact"
+  },
+  {
+   "fieldname": "medication_allergy",
+   "fieldtype": "Small Text",
+   "label": "Medication Allergies"
+  },
+  {
+   "fieldname": "past_surgery",
+   "fieldtype": "Select",
+   "label": "Undergone any surgery?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "insurance_section",
+   "fieldtype": "Section Break",
+   "label": "Life Insurance \u2013 Nominee Details"
+  },
+  {
+   "fieldname": "nominee_name",
+   "fieldtype": "Data",
+   "label": "Nominee Name"
+  },
+  {
+   "fieldname": "nominee_dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "nominee_relationship",
+   "fieldtype": "Select",
+   "label": "Relationship",
+   "options": "Father\nMother\nSpouse\nOther"
+  },
+  {
+   "fieldname": "nominee_address",
+   "fieldtype": "Small Text",
+   "label": "Nominee Address"
+  },
+  {
+   "fieldname": "payment_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "application_fee",
+   "fieldtype": "Currency",
+   "label": "Application Fee"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Paid\nPending\nFailed"
+  },
+  {
+   "fieldname": "transaction_id",
+   "fieldtype": "Data",
+   "label": "Transaction ID"
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Datetime",
+   "label": "Payment Date"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Select",
+   "label": "Payment Mode",
+   "options": "UPI\nCard\nNet Banking\nCash"
+  },
+  {
+   "fieldname": "register_year",
+   "fieldtype": "Int",
+   "label": "Register Year"
+  },
+  {
+   "fieldname": "registered_batch",
+   "fieldtype": "Data",
+   "label": "Registered Batch"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-09 15:35:02.734724",
+ "modified_by": "Administrator",
+ "module": "Education",
+ "name": "Registration Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

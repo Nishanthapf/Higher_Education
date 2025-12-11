@@ -1,0 +1,247 @@
+2025-10-06 17:34:02,164 DEBUG cd SLCM && python3 -m venv env
+2025-10-06 17:34:05,357 DEBUG cd SLCM && /home/appi/SLCM/env/bin/python -m pip install --quiet --upgrade pip
+2025-10-06 17:34:06,895 DEBUG cd SLCM && /home/appi/SLCM/env/bin/python -m pip install --quiet wheel
+2025-10-06 17:34:07,751 LOG Getting frappe
+2025-10-06 17:34:07,752 DEBUG cd SLCM/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2025-10-06 17:34:13,490 LOG Installing frappe
+2025-10-06 17:34:13,494 DEBUG cd /home/appi/SLCM && /home/appi/SLCM/env/bin/python -m pip install --quiet --upgrade -e /home/appi/SLCM/apps/frappe 
+2025-10-06 17:34:42,853 DEBUG cd /home/appi/SLCM/apps/frappe && yarn install --check-files
+2025-10-06 17:34:48,386 DEBUG cd SLCM && bench build
+2025-10-06 17:34:48,655 INFO /home/appi/.local/bin/bench build
+2025-10-06 17:35:10,742 LOG setting up backups
+2025-10-06 17:35:10,785 LOG backups were set up
+2025-10-06 17:35:10,785 INFO Bench SLCM initialized
+2025-10-06 18:00:01,440 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-07 18:00:01,461 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-08 12:00:02,271 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-09 12:00:02,275 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-10 12:00:01,670 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-10 15:51:22,472 INFO /home/appi/.local/bin/bench new-site education.local
+2025-10-10 15:52:29,005 INFO /home/appi/.local/bin/bench get-app https://github.com/Nishanth0722/education --branch develop
+2025-10-10 15:52:29,018 LOG Getting education
+2025-10-10 15:52:29,018 DEBUG cd ./apps && git clone https://github.com/Nishanth0722/education --branch develop --depth 1 --origin upstream
+2025-10-10 15:52:33,561 LOG Installing education
+2025-10-10 15:52:33,562 DEBUG cd /home/appi/SLCM && /home/appi/SLCM/env/bin/python -m pip install --quiet --upgrade -e /home/appi/SLCM/apps/education 
+2025-10-10 15:52:35,291 DEBUG cd /home/appi/SLCM/apps/education && yarn install --check-files
+2025-10-10 15:52:46,584 DEBUG bench build --app education
+2025-10-10 15:52:46,695 INFO /home/appi/.local/bin/bench build --app education
+2025-10-10 15:52:53,007 INFO A newer version of bench is available: 5.25.9 → 5.25.10
+2025-10-10 15:53:21,337 INFO /home/appi/.local/bin/bench --site education.local install-app education
+2025-10-10 15:53:51,741 INFO /home/appi/.local/bin/bench get-app erpnext
+2025-10-10 15:53:52,442 LOG Getting erpnext
+2025-10-10 15:53:52,443 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2025-10-10 15:53:57,166 LOG Installing erpnext
+2025-10-10 15:53:57,166 DEBUG cd /home/appi/SLCM && /home/appi/SLCM/env/bin/python -m pip install --quiet --upgrade -e /home/appi/SLCM/apps/erpnext 
+2025-10-10 15:54:21,784 DEBUG cd /home/appi/SLCM/apps/erpnext && yarn install --check-files
+2025-10-10 15:54:21,999 DEBUG bench build --app erpnext
+2025-10-10 15:54:22,082 INFO /home/appi/.local/bin/bench build --app erpnext
+2025-10-10 15:54:25,196 INFO A newer version of bench is available: 5.25.9 → 5.25.10
+2025-10-10 15:54:31,556 INFO /home/appi/.local/bin/bench --site education.local install-app education
+2025-10-10 16:11:09,771 INFO /home/appi/.local/bin/bench set-config redis_queue redis://127.0.0.1:6379
+2025-10-10 16:11:10,434 INFO /home/appi/.local/bin/bench set-config redis_socketio redis://127.0.0.1:6379
+2025-10-10 16:11:10,978 INFO /home/appi/.local/bin/bench set-config redis_cache redis://127.0.0.1:6379
+2025-10-10 16:47:03,418 INFO /home/appi/.local/bin/bench set-config redis_queue redis://127.0.0.1:6379 --site education.local
+2025-10-10 16:47:03,857 INFO /home/appi/.local/bin/bench set-config redis_socketio redis://127.0.0.1:6379 --site education.local
+2025-10-10 16:47:04,270 INFO /home/appi/.local/bin/bench set-config redis_cache redis://127.0.0.1:6379 --site education.local
+2025-10-10 16:47:08,106 INFO /home/appi/.local/bin/bench set-config -g redis_queue redis://127.0.0.1:6379
+2025-10-10 16:47:08,515 INFO /home/appi/.local/bin/bench set-config -g redis_socketio redis://127.0.0.1:6379
+2025-10-10 16:47:08,960 INFO /home/appi/.local/bin/bench set-config -g redis_cache redis://127.0.0.1:6379
+2025-10-10 16:47:15,321 INFO /home/appi/.local/bin/bench restart
+2025-10-10 16:47:15,486 INFO A newer version of bench is available: 5.25.9 → 5.25.10
+2025-10-10 16:47:15,594 INFO /home/appi/.local/bin/bench stop
+2025-10-10 16:47:15,979 INFO /home/appi/.local/bin/bench start
+2025-10-10 16:47:16,139 INFO /home/appi/.local/bin/bench watch
+2025-10-10 16:47:16,144 INFO /home/appi/.local/bin/bench worker
+2025-10-10 16:47:16,177 INFO /home/appi/.local/bin/bench serve --port 8004
+2025-10-10 16:47:16,178 INFO /home/appi/.local/bin/bench schedule
+2025-10-10 16:47:59,569 INFO /home/appi/.local/bin/bench restart
+2025-10-10 16:47:59,707 INFO A newer version of bench is available: 5.25.9 → 5.25.10
+2025-10-10 16:47:59,806 INFO /home/appi/.local/bin/bench stop
+2025-10-10 16:48:00,226 INFO /home/appi/.local/bin/bench start
+2025-10-10 16:48:00,399 INFO /home/appi/.local/bin/bench serve --port 8004
+2025-10-10 16:48:00,400 INFO /home/appi/.local/bin/bench schedule
+2025-10-10 16:48:00,433 INFO /home/appi/.local/bin/bench watch
+2025-10-10 16:48:00,434 INFO /home/appi/.local/bin/bench worker
+2025-10-10 16:48:48,429 INFO /home/appi/.local/bin/bench sitelist
+2025-10-10 16:49:10,378 INFO /home/appi/.local/bin/bench --site education.local reinstall --yes
+2025-10-10 16:50:44,719 INFO /home/appi/.local/bin/bench use education.local
+2025-10-10 16:50:54,343 INFO /home/appi/.local/bin/bench start
+2025-10-10 16:50:54,470 INFO /home/appi/.local/bin/bench watch
+2025-10-10 16:50:54,513 INFO /home/appi/.local/bin/bench worker
+2025-10-10 16:50:54,513 INFO /home/appi/.local/bin/bench schedule
+2025-10-10 16:50:54,513 INFO /home/appi/.local/bin/bench serve --port 8004
+2025-10-10 16:54:27,875 INFO /home/appi/.local/bin/bench --site education.local install-app education
+2025-10-10 16:57:03,454 INFO /home/appi/.local/bin/bench use education.local
+2025-10-10 16:57:05,482 INFO /home/appi/.local/bin/bench start
+2025-10-10 16:57:05,647 INFO /home/appi/.local/bin/bench watch
+2025-10-10 16:57:05,653 INFO /home/appi/.local/bin/bench schedule
+2025-10-10 16:57:05,686 INFO /home/appi/.local/bin/bench serve --port 8004
+2025-10-10 16:57:05,687 INFO /home/appi/.local/bin/bench worker
+2025-10-10 18:00:01,951 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-14 15:17:37,838 INFO /home/appi/.local/bin/bench use education.local
+2025-10-14 15:17:43,948 INFO /home/appi/.local/bin/bench start
+2025-10-14 15:17:44,228 INFO /home/appi/.local/bin/bench schedule
+2025-10-14 15:17:44,230 INFO /home/appi/.local/bin/bench watch
+2025-10-14 15:17:44,324 INFO /home/appi/.local/bin/bench worker
+2025-10-14 15:17:44,325 INFO /home/appi/.local/bin/bench serve --port 8004
+2025-10-14 18:00:18,735 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-15 12:00:01,391 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-15 18:00:01,628 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-16 12:00:02,053 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-16 18:00:01,281 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-17 12:00:02,159 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-21 12:00:02,008 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-22 12:00:01,482 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-22 18:00:01,422 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-23 12:00:01,624 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-23 18:00:01,594 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-24 18:00:01,903 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-27 12:00:01,359 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-27 18:00:01,268 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-28 12:00:01,634 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-29 12:00:01,665 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-29 18:00:01,223 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-30 12:00:01,335 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-30 18:00:01,715 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-10-31 12:00:02,226 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-03 12:00:01,227 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-03 18:00:01,720 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-04 12:00:01,817 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-04 18:00:01,326 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-05 12:00:01,451 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-06 12:00:01,472 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-07 12:00:01,316 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-08 12:00:03,235 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-10 12:00:01,958 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-14 12:00:01,683 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-17 18:00:01,528 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-19 12:00:01,363 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-19 18:00:01,639 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-20 12:00:01,434 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-20 18:00:01,944 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-21 12:00:02,278 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-24 12:00:01,422 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-24 16:43:10,562 INFO /home/appi/.local/bin/bench use education.local
+2025-11-24 16:43:20,993 INFO /home/appi/.local/bin/bench start
+2025-11-24 16:43:21,301 INFO /home/appi/.local/bin/bench worker
+2025-11-24 16:43:21,303 INFO /home/appi/.local/bin/bench serve --port 8004
+2025-11-24 16:43:21,390 INFO /home/appi/.local/bin/bench schedule
+2025-11-24 16:43:21,390 INFO /home/appi/.local/bin/bench watch
+2025-11-24 18:00:01,936 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-26 12:00:01,547 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-26 16:27:32,532 INFO /home/appi/.local/bin/bench start
+2025-11-26 16:27:32,841 INFO /home/appi/.local/bin/bench schedule
+2025-11-26 16:27:32,845 INFO /home/appi/.local/bin/bench worker
+2025-11-26 16:27:32,909 INFO /home/appi/.local/bin/bench watch
+2025-11-26 16:27:32,919 INFO /home/appi/.local/bin/bench serve --port 8004
+2025-11-26 18:00:01,465 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-27 12:00:01,520 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-27 18:00:01,493 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-28 12:00:01,947 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-11-28 18:00:01,651 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-12-01 12:00:01,539 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-12-01 18:00:01,975 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-12-02 12:00:01,559 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-12-03 12:00:01,762 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-12-03 18:00:01,972 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-12-04 12:00:01,975 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-12-04 14:39:43,318 INFO /home/appi/.local/bin/bench use education.local
+2025-12-04 14:39:46,533 INFO /home/appi/.local/bin/bench start
+2025-12-04 14:39:46,699 INFO /home/appi/.local/bin/bench worker
+2025-12-04 14:39:46,700 INFO /home/appi/.local/bin/bench schedule
+2025-12-04 14:39:46,738 INFO /home/appi/.local/bin/bench serve --port 8004
+2025-12-04 14:39:46,739 INFO /home/appi/.local/bin/bench watch
+2025-12-04 15:00:03,992 INFO /home/appi/.local/bin/bench --site education.local migrate
+2025-12-04 15:01:20,121 INFO /home/appi/.local/bin/bench migrate
+2025-12-04 15:06:50,340 INFO /home/appi/.local/bin/bench clear-cache
+2025-12-04 15:06:54,748 INFO /home/appi/.local/bin/bench migrate
+2025-12-04 15:14:49,743 INFO /home/appi/.local/bin/bench new-doctype ug_registration module education
+2025-12-04 15:15:09,273 INFO /home/appi/.local/bin/bench new-doctype --doctype ug_registration --module education
+2025-12-04 15:15:26,499 INFO /home/appi/.local/bin/bench new-doctype --doctype ug_registration --module education
+2025-12-04 15:15:50,108 INFO /home/appi/.local/bin/bench new-doctype --doctype ug_registration --module education
+2025-12-04 15:15:55,798 INFO /home/appi/.local/bin/bench new-doctype --doctype ug_registration --module education
+2025-12-04 15:16:14,091 INFO /home/appi/.local/bin/bench new-doctype --doctype ug_registration --module Education
+2025-12-04 15:16:21,163 INFO /home/appi/.local/bin/bench new-doctype --doctype ug_registration --module Education
+2025-12-04 15:21:26,484 INFO /home/appi/.local/bin/bench migrate
+2025-12-04 15:25:30,480 INFO /home/appi/.local/bin/bench migrate
+2025-12-04 15:26:09,298 INFO /home/appi/.local/bin/bench migrate
+2025-12-04 15:59:19,497 INFO /home/appi/.local/bin/bench migrate
+2025-12-04 16:01:57,625 INFO /home/appi/.local/bin/bench migrate
+2025-12-04 16:02:59,748 INFO /home/appi/.local/bin/bench migrate
+2025-12-04 18:00:01,859 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-12-05 12:00:01,842 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-12-08 12:00:02,225 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-12-09 12:00:01,572 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-12-09 12:21:11,945 INFO /home/appi/.local/bin/bench start
+2025-12-09 12:21:12,106 INFO /home/appi/.local/bin/bench watch
+2025-12-09 12:21:12,110 INFO /home/appi/.local/bin/bench schedule
+2025-12-09 12:21:12,129 INFO /home/appi/.local/bin/bench serve --port 8004
+2025-12-09 12:21:12,141 INFO /home/appi/.local/bin/bench worker
+2025-12-09 15:46:01,494 INFO /home/appi/.local/bin/bench get-app https://github.com/Nishanthapf/ms-calendar --branch develop
+2025-12-09 15:46:01,505 LOG Getting ms-calendar
+2025-12-09 15:46:01,505 DEBUG cd ./apps && git clone https://github.com/Nishanthapf/ms-calendar --branch develop --depth 1 --origin upstream
+2025-12-09 15:46:02,804 LOG Installing ms_calendar
+2025-12-09 15:46:02,804 DEBUG cd /home/appi/SLCM && /home/appi/SLCM/env/bin/python -m pip install --quiet --upgrade -e /home/appi/SLCM/apps/ms_calendar 
+2025-12-09 15:46:05,425 DEBUG bench build --app ms_calendar
+2025-12-09 15:46:05,582 INFO /home/appi/.local/bin/bench build --app ms_calendar
+2025-12-09 15:46:08,333 INFO A newer version of bench is available: 5.25.9 → 5.27.0
+2025-12-09 15:47:05,614 INFO /home/appi/.local/bin/bench --install app ms-calendar --site education.local
+2025-12-09 15:47:15,131 INFO /home/appi/.local/bin/bench install app ms-calendar --site education.local
+2025-12-09 15:47:15,131 WARNING superuser privileges required for this command
+2025-12-09 15:47:22,913 INFO /home/appi/.local/bin/bench install-app ms-calendar --site education.local
+2025-12-09 15:48:03,620 INFO /home/appi/.local/bin/bench --site education.local install-app ms-calendar
+2025-12-09 15:50:19,436 INFO /home/appi/.local/bin/bench --site education.local install-app ms-calendar
+2025-12-09 15:51:44,917 INFO /home/appi/.local/bin/bench get-app ms-calendar
+2025-12-09 15:51:46,117 WARNING /home/appi/.local/bin/bench get-app ms-calendar executed with exit code 1
+2025-12-09 15:51:46,251 INFO A newer version of bench is available: 5.25.9 → 5.27.0
+2025-12-09 15:53:56,915 INFO /home/appi/.local/bin/bench get-app https://github.com/Nishanthapf/ms-calendar.git
+2025-12-09 15:53:56,925 LOG Getting ms-calendar
+2025-12-09 15:53:56,926 DEBUG cd ./apps && git clone https://github.com/Nishanthapf/ms-calendar.git  --depth 1 --origin upstream
+2025-12-09 15:53:58,109 WARNING /home/appi/.local/bin/bench get-app https://github.com/Nishanthapf/ms-calendar.git executed with exit code 1
+2025-12-09 15:53:58,410 INFO A newer version of bench is available: 5.25.9 → 5.27.0
+2025-12-09 15:54:24,255 INFO /home/appi/.local/bin/bench get-app https://github.com/Nishanthapf/ms-calendar.git --branch develop
+2025-12-09 15:54:26,493 INFO App moved from apps/ms-calendar to archived/apps/ms-calendar-2025-12-09
+2025-12-09 15:54:26,498 LOG Getting ms-calendar
+2025-12-09 15:54:26,498 DEBUG cd ./apps && git clone https://github.com/Nishanthapf/ms-calendar.git --branch develop --depth 1 --origin upstream
+2025-12-09 15:54:27,796 WARNING /home/appi/.local/bin/bench get-app https://github.com/Nishanthapf/ms-calendar.git --branch develop executed with exit code 1
+2025-12-09 15:54:27,993 INFO A newer version of bench is available: 5.25.9 → 5.27.0
+2025-12-09 15:55:10,169 INFO /home/appi/.local/bin/bench get-app https://github.com/Nishanthapf/ms-calendar --branch develop
+2025-12-09 15:55:12,169 INFO App moved from apps/ms-calendar to archived/apps/ms-calendar-2025-12-09_1
+2025-12-09 15:55:12,174 LOG Getting ms-calendar
+2025-12-09 15:55:12,174 DEBUG cd ./apps && git clone https://github.com/Nishanthapf/ms-calendar --branch develop --depth 1 --origin upstream
+2025-12-09 15:55:13,455 WARNING /home/appi/.local/bin/bench get-app https://github.com/Nishanthapf/ms-calendar --branch develop executed with exit code 1
+2025-12-09 15:55:13,650 INFO A newer version of bench is available: 5.25.9 → 5.27.0
+2025-12-09 15:56:37,215 INFO /home/appi/.local/bin/bench new-site interview_schedule
+2025-12-09 15:57:41,250 INFO /home/appi/.local/bin/bench --site interview_schedule install-app ms-calendar
+2025-12-09 15:58:23,912 INFO /home/appi/.local/bin/bench --site interview_schedule install-app ms_calendar
+2025-12-09 15:59:47,241 INFO /home/appi/.local/bin/bench --site education.local install-app ms_calendar
+2025-12-09 16:01:01,120 INFO /home/appi/.local/bin/bench --site education.local uninstall-app ms_calendar
+2025-12-09 16:02:50,534 INFO /home/appi/.local/bin/bench --site education.local list-apps
+2025-12-09 16:06:15,275 INFO /home/appi/.local/bin/bench --site education.local install-app ms_calendar
+2025-12-09 16:07:44,265 INFO /home/appi/.local/bin/bench pip install -e apps/ms_calendar
+2025-12-09 16:07:54,642 INFO /home/appi/.local/bin/bench clear-cache
+2025-12-09 16:07:55,984 INFO /home/appi/.local/bin/bench setup requirements
+2025-12-09 16:07:55,992 DEBUG /home/appi/SLCM/env/bin/python -m pip install --quiet --upgrade pip
+2025-12-09 16:07:58,039 LOG Installing frappe
+2025-12-09 16:07:58,041 DEBUG cd /home/appi/SLCM && /home/appi/SLCM/env/bin/python -m pip install --quiet --upgrade -e /home/appi/SLCM/apps/frappe 
+2025-12-09 16:08:00,634 DEBUG cd /home/appi/SLCM && /home/appi/SLCM/env/bin/python -m pip install --quiet --upgrade coverage~=7.10.0 Faker~=18.10.1 pyngrok~=6.0.0 unittest-xml-reporting~=3.2.0 watchdog~=3.0.0 hypothesis~=6.77.0 responses==0.23.1 freezegun~=1.2.2 
+2025-12-09 16:08:10,222 DEBUG cd /home/appi/SLCM/apps/frappe && yarn install --check-files
+2025-12-09 16:08:13,664 LOG Installing education
+2025-12-09 16:08:13,665 DEBUG cd /home/appi/SLCM && /home/appi/SLCM/env/bin/python -m pip install --quiet --upgrade -e /home/appi/SLCM/apps/education 
+2025-12-09 16:08:17,554 DEBUG cd /home/appi/SLCM/apps/education && yarn install --check-files
+2025-12-09 16:08:20,549 LOG Installing ms_calendar
+2025-12-09 16:08:20,549 DEBUG cd /home/appi/SLCM && /home/appi/SLCM/env/bin/python -m pip install --quiet --upgrade -e /home/appi/SLCM/apps/ms_calendar 
+2025-12-09 16:08:22,921 LOG Installing erpnext
+2025-12-09 16:08:22,921 DEBUG cd /home/appi/SLCM && /home/appi/SLCM/env/bin/python -m pip install --quiet --upgrade -e /home/appi/SLCM/apps/erpnext 
+2025-12-09 16:08:25,472 DEBUG cd /home/appi/SLCM/apps/erpnext && yarn install --check-files
+2025-12-09 16:08:26,120 INFO A newer version of bench is available: 5.25.9 → 5.27.0
+2025-12-09 16:08:26,355 INFO /home/appi/.local/bin/bench build
+2025-12-09 16:09:04,551 INFO /home/appi/.local/bin/bench migrate
+2025-12-09 16:09:16,943 INFO /home/appi/.local/bin/bench restart
+2025-12-09 16:09:17,237 INFO A newer version of bench is available: 5.25.9 → 5.27.0
+2025-12-09 16:10:04,238 INFO /home/appi/.local/bin/bench --site education.local install-app ms_calendar
+2025-12-09 16:10:13,599 INFO /home/appi/.local/bin/bench --site education.local list-apps
+2025-12-10 10:32:26,175 INFO /home/appi/.local/bin/bench migrate
+2025-12-10 10:34:38,541 INFO /home/appi/.local/bin/bench migrate
+2025-12-10 12:00:01,974 INFO /home/appi/.local/bin/bench --verbose --site all backup
+2025-12-10 12:03:45,016 INFO /home/appi/.local/bin/bench migrate

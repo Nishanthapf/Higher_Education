@@ -1,0 +1,414 @@
+2025-12-09 15:59:52,449 ERROR frappe Unable to load translations
+Site: education.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/appi/SLCM/apps/frappe/frappe/app.py", line 102, in application
+    init_request(request)
+  File "/home/appi/SLCM/apps/frappe/frappe/app.py", line 178, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 208, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 1040, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 881, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ms_calendar'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/utils/redis_wrapper.py", line 253, in hget
+    value = generator()
+            ^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 190, in get_translations_from_apps
+    translations.update(get_translations_from_csv(lang, app) or {})
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 202, in get_translations_from_csv
+    os.path.join(frappe.get_app_path(app, "translations"), lang + ".csv"), lang, app
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ms_calendar'
+2025-12-09 15:59:52,458 ERROR frappe Unable to load translations
+Site: education.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/appi/SLCM/apps/frappe/frappe/app.py", line 102, in application
+    init_request(request)
+  File "/home/appi/SLCM/apps/frappe/frappe/app.py", line 178, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 208, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 1040, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 881, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ms_calendar'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/utils/redis_wrapper.py", line 253, in hget
+    value = generator()
+            ^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 190, in get_translations_from_apps
+    translations.update(get_translations_from_csv(lang, app) or {})
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 202, in get_translations_from_csv
+    os.path.join(frappe.get_app_path(app, "translations"), lang + ".csv"), lang, app
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ms_calendar'
+2025-12-09 16:00:04,315 ERROR frappe Unable to load translations
+Site: education.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/appi/SLCM/apps/frappe/frappe/app.py", line 102, in application
+    init_request(request)
+  File "/home/appi/SLCM/apps/frappe/frappe/app.py", line 178, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 208, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 1040, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 881, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ms_calendar'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/utils/redis_wrapper.py", line 253, in hget
+    value = generator()
+            ^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 190, in get_translations_from_apps
+    translations.update(get_translations_from_csv(lang, app) or {})
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 202, in get_translations_from_csv
+    os.path.join(frappe.get_app_path(app, "translations"), lang + ".csv"), lang, app
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ms_calendar'
+2025-12-09 16:00:04,321 ERROR frappe Unable to load translations
+Site: education.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/appi/SLCM/apps/frappe/frappe/app.py", line 102, in application
+    init_request(request)
+  File "/home/appi/SLCM/apps/frappe/frappe/app.py", line 178, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 208, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 1040, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 881, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ms_calendar'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/utils/redis_wrapper.py", line 253, in hget
+    value = generator()
+            ^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 190, in get_translations_from_apps
+    translations.update(get_translations_from_csv(lang, app) or {})
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 202, in get_translations_from_csv
+    os.path.join(frappe.get_app_path(app, "translations"), lang + ".csv"), lang, app
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ms_calendar'
+2025-12-09 16:06:19,720 ERROR frappe Unable to load translations
+Site: education.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/appi/SLCM/apps/frappe/frappe/app.py", line 102, in application
+    init_request(request)
+  File "/home/appi/SLCM/apps/frappe/frappe/app.py", line 178, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 208, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 1040, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 881, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ms_calendar'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/utils/redis_wrapper.py", line 253, in hget
+    value = generator()
+            ^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 190, in get_translations_from_apps
+    translations.update(get_translations_from_csv(lang, app) or {})
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 202, in get_translations_from_csv
+    os.path.join(frappe.get_app_path(app, "translations"), lang + ".csv"), lang, app
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ms_calendar'
+2025-12-09 16:06:19,726 ERROR frappe Unable to load translations
+Site: education.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/appi/SLCM/apps/frappe/frappe/app.py", line 102, in application
+    init_request(request)
+  File "/home/appi/SLCM/apps/frappe/frappe/app.py", line 178, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 208, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 1040, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 881, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ms_calendar'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/utils/redis_wrapper.py", line 253, in hget
+    value = generator()
+            ^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 190, in get_translations_from_apps
+    translations.update(get_translations_from_csv(lang, app) or {})
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/translate.py", line 202, in get_translations_from_csv
+    os.path.join(frappe.get_app_path(app, "translations"), lang + ".csv"), lang, app
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/appi/SLCM/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ms_calendar'
+2025-12-09 16:13:10,603 ERROR frappe New Exception collected in error log
+Site: education.local
+Form Dict: {'doctype': 'MeritTrac Test Result', 'filters': '[]', 'fields': '[]', 'distinct': 'false', 'cmd': 'frappe.desk.reportview.get_count'}
+2025-12-09 16:14:03,142 ERROR frappe New Exception collected in error log
+Site: education.local
+Form Dict: {'interviewer_emails': '["nishanth.a@azimpremjifoundation.org"]', 'interview_date': '2025-12-10', 'cmd': 'ms_calendar.api.msgraph.get_schedule_free_slots'}
+2025-12-09 16:16:44,553 ERROR frappe New Exception collected in error log
+Site: education.local
+Form Dict: {'interviewer_emails': '["nishanth.a@azimpremjifoundation.org"]', 'interview_date': '2025-12-10', 'cmd': 'ms_calendar.api.msgraph.get_schedule_free_slots'}
+2025-12-09 16:20:27,337 ERROR frappe New Exception collected in error log
+Site: education.local
+Form Dict: {'doc': '{"name":"Student","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2024-06-07 16:52:48.135292","modified_by":"Administrator","docstatus":0,"idx":0,"read_only":0,"in_create":0,"protect_attached_files":0,"naming_rule":"By \\"Naming Series\\" field","autoname":"naming_series:","title_field":"student_name","allow_rename":1,"module":"Education","is_submittable":0,"istable":0,"issingle":0,"is_tree":0,"is_calendar_and_gantt":0,"editable_grid":0,"quick_entry":0,"grid_page_length":0,"rows_threshold_for_grid_search":0,"track_changes":0,"track_seen":0,"track_views":0,"custom":0,"beta":0,"is_virtual":0,"queue_in_background":0,"image_field":"image","max_attachments":0,"hide_toolbar":0,"allow_copy":0,"allow_import":1,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"show_title_field_in_link":1,"translated_doctype":0,"sort_field":"modified","sort_order":"DESC","force_re_route_to_default_view":0,"document_type":"Document","show_preview_popup":0,"show_name_in_global_search":1,"email_append_to":0,"has_web_view":0,"allow_guest_to_view":0,"index_web_pages_for_search":0,"engine":"InnoDB","migration_hash":"2ed3c302a5678ade54e8034f6d900060","row_format":"Dynamic","doctype":"DocType","fields":[{"name":"gaqk6ls929","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":1,"fieldtype":"Section Break","fieldname":"section_break_1","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqsqi3ev7","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":2,"label":"Enabled","fieldtype":"Check","fieldname":"enabled","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"default":"1","fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq36od4bb","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":3,"fieldtype":"Section Break","fieldname":"section_break_3","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqk2ak40m","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":4,"label":"First Name","fieldtype":"Data","fieldname":"first_name","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":1,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":1,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqvav43lp","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":5,"label":"Middle Name","fieldtype":"Data","fieldname":"middle_name","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqki6tnn9","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":6,"label":"Last Name","fieldtype":"Data","fieldname":"last_name","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":1,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqjrrvqed","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":7,"fieldtype":"Column Break","fieldname":"column_break_4","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq4h7o5s8","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":8,"label":"Naming Series","fieldtype":"Select","fieldname":"naming_series","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"EDU-STU-.YYYY.-","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":1,"set_only_once":1,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqdd7c7kn","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":9,"label":"Joining Date","fieldtype":"Date","fieldname":"joining_date","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"default":"Today","fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":1,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqvs0v5u3","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":10,"label":"User ID","fieldtype":"Link","fieldname":"user","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"User","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqu1i1sr0","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":11,"label":"Student Applicant","fieldtype":"Link","fieldname":"student_applicant","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Student Applicant","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":1,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq9s5ai6s","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":12,"label":"Image","fieldtype":"Attach Image","fieldname":"image","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":1,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"width":"10","columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqstvlh5f","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":13,"label":"Personal Details","fieldtype":"Section Break","fieldname":"section_break_7","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqja9dri0","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":14,"label":"Student Email Address","fieldtype":"Data","fieldname":"student_email_id","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":1,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":1,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":1,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqbepia5h","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":15,"label":"Date of Birth","fieldtype":"Date","fieldname":"date_of_birth","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqi36517e","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":16,"label":"Blood Group","fieldtype":"Select","fieldname":"blood_group","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"\\nA+\\nA-\\nB+\\nB-\\nO+\\nO-\\nAB+\\nAB-","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqgk9q9rd","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":17,"fieldtype":"Column Break","fieldname":"column_break_3","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqfr3i41e","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":18,"label":"Student Mobile Number","fieldtype":"Data","fieldname":"student_mobile_number","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":1,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq8jnu572","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":19,"label":"Gender","fieldtype":"Link","fieldname":"gender","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Gender","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqoiau6lb","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":20,"label":"Nationality","fieldtype":"Data","fieldname":"nationality","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq4qee912","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":21,"label":"Address","fieldtype":"Tab Break","fieldname":"address_tab","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq56ishgo","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":22,"fieldtype":"Section Break","fieldname":"section_break_22","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqc9tmb27","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":23,"label":"Address Line 1","fieldtype":"Data","fieldname":"address_line_1","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq7equ00v","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":24,"label":"Address Line 2","fieldtype":"Data","fieldname":"address_line_2","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqtlogucl","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":25,"label":"Pincode","fieldtype":"Data","fieldname":"pincode","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqoouj3ql","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":26,"fieldtype":"Column Break","fieldname":"column_break_20","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqffn8rtu","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":27,"label":"City","fieldtype":"Data","fieldname":"city","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqr8011t0","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":28,"label":"State","fieldtype":"Data","fieldname":"state","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq89hnsja","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":29,"label":"Country","fieldtype":"Link","fieldname":"country","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Country","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq43gjrah","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":30,"label":"Relations","fieldtype":"Tab Break","fieldname":"relations_tab","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqum4g159","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":31,"label":"Guardian Details","fieldtype":"Section Break","fieldname":"section_break_18","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqspbfsq5","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":32,"label":"Guardians","fieldtype":"Table","fieldname":"guardians","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Student Guardian","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqbmn9iap","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":33,"label":"Sibling Details","fieldtype":"Section Break","fieldname":"section_break_20","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Country","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqm89scph","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":34,"label":"Siblings","fieldtype":"Table","fieldname":"siblings","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Student Sibling","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq7m4p8jr","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":35,"label":"Customer Details","fieldtype":"Tab Break","fieldname":"customer_details_tab","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq076qqa8","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":36,"label":"Customer Details","fieldtype":"Section Break","fieldname":"customer_details_section","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqvnhmb2h","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":37,"label":"Customer","fieldtype":"Link","fieldname":"customer","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Customer","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":1,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqve266uj","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":38,"fieldtype":"Column Break","fieldname":"column_break_rgpi","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqbubdipn","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":39,"label":"Customer Group","fieldtype":"Link","fieldname":"customer_group","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Customer Group","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq1knrmof","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":40,"label":"Exit","fieldtype":"Tab Break","fieldname":"exit_tab","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq5b8fgff","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":41,"fieldtype":"Section Break","fieldname":"exit","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqbamidum","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":42,"label":"Date of Leaving","fieldtype":"Date","fieldname":"date_of_leaving","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqqre13oi","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":43,"label":"Leaving Certificate Number","fieldtype":"Data","fieldname":"leaving_certificate_number","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqh9o12l0","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":44,"fieldtype":"Column Break","fieldname":"column_break_31","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq6d402o2","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":45,"label":"Reason For Leaving","fieldtype":"Text","fieldname":"reason_for_leaving","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaq9hsqg25","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":46,"label":"Student Name","fieldtype":"Data","fieldname":"student_name","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":1,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"gaqc8evphl","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":47,"label":"Connections","fieldtype":"Tab Break","fieldname":"connections_tab","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":1,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Student","parentfield":"fields","parenttype":"DocType","doctype":"DocField"}],"permissions":[{"name":"gaq2pttqdc","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":1,"role":"Instructor","if_owner":0,"permlevel":0,"select":0,"read":1,"write":0,"create":0,"delete":0,"submit":0,"cancel":0,"amend":0,"report":0,"export":0,"import":0,"share":0,"print":0,"email":0,"parent":"Student","parentfield":"permissions","parenttype":"DocType","doctype":"DocPerm"},{"name":"gaqnvg93nt","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":2,"role":"Academics User","if_owner":0,"permlevel":0,"select":0,"read":1,"write":1,"create":1,"delete":1,"submit":0,"cancel":0,"amend":0,"report":1,"export":1,"import":1,"share":1,"print":1,"email":1,"parent":"Student","parentfield":"permissions","parenttype":"DocType","doctype":"DocPerm"},{"name":"gaqrsjq4kf","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":3,"role":"Student","if_owner":0,"permlevel":0,"select":0,"read":1,"write":0,"create":0,"delete":0,"submit":0,"cancel":0,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"parent":"Student","parentfield":"permissions","parenttype":"DocType","doctype":"DocPerm"}],"actions":[],"links":[{"name":"gaqdcd3b0e","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":1,"link_doctype":"Program Enrollment","link_fieldname":"student","group":"Admission","hidden":0,"is_child_table":0,"custom":0,"parent":"Student","parentfield":"links","parenttype":"DocType","doctype":"DocType Link"},{"name":"gaqatlg6g0","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":2,"link_doctype":"Course Enrollment","link_fieldname":"student","group":"Admission","hidden":0,"is_child_table":0,"custom":0,"parent":"Student","parentfield":"links","parenttype":"DocType","doctype":"DocType Link"},{"name":"gaq3ibjeqf","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":3,"link_doctype":"Student Log","link_fieldname":"student","group":"Student Activity","hidden":0,"is_child_table":0,"custom":0,"parent":"Student","parentfield":"links","parenttype":"DocType","doctype":"DocType Link"},{"name":"gaq8pnhfr2","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":4,"link_doctype":"Student Group","link_fieldname":"student","group":"Student Activity","hidden":0,"is_child_table":0,"custom":0,"parent":"Student","parentfield":"links","parenttype":"DocType","doctype":"DocType Link"},{"name":"gaqg0bv5uq","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":5,"link_doctype":"Assessment Result","link_fieldname":"student","group":"Assessment","hidden":0,"is_child_table":0,"custom":0,"parent":"Student","parentfield":"links","parenttype":"DocType","doctype":"DocType Link"},{"name":"gaqmua0dd0","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":6,"link_doctype":"Student Attendance","link_fieldname":"student","group":"Attendance","hidden":0,"is_child_table":0,"custom":0,"parent":"Student","parentfield":"links","parenttype":"DocType","doctype":"DocType Link"},{"name":"gaqi97u1co","owner":"Administrator","creation":"2015-09-07 13:00:55.938280","modified":"2025-10-10 16:54:31.474531","modified_by":"Administrator","docstatus":0,"idx":7,"link_doctype":"Student Leave Application","link_fieldname":"student","group":"Attendance","hidden":0,"is_child_table":0,"custom":0,"parent":"Student","parentfield":"links","parenttype":"DocType","doctype":"DocType Link"},{"docstatus":0,"doctype":"DocType Link","name":"new-doctype-link-ppdtfvdain","__islocal":1,"__unsaved":1,"owner":"Administrator","hidden":0,"is_child_table":0,"custom":0,"parent":"Student","parentfield":"links","parenttype":"DocType","idx":8,"__unedited":false,"link_doctype":"Schedule interview","link_fieldname":"student"}],"states":[],"__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
