@@ -1,0 +1,362 @@
+Usage: bench  backup [OPTIONS]
+Try 'bench  backup --help' for help.
+
+Error: Please specify --site sitename
+Usage: bench  backup [OPTIONS]
+Try 'bench  backup --help' for help.
+
+Error: Please specify --site sitename
+Usage: bench  backup [OPTIONS]
+Try 'bench  backup --help' for help.
+
+Error: Please specify --site sitename
+Usage: bench  backup [OPTIONS]
+Try 'bench  backup --help' for help.
+
+Error: Please specify --site sitename
+Usage: bench  backup [OPTIONS]
+Try 'bench  backup --help' for help.
+
+Error: Please specify --site sitename
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251010_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-10 18:00:04.079978
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251010_180002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251010_180002-education_local-database.sql.gz 892.6KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251014_180019-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-14 18:00:22.323135
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251014_180019-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251014_180019-education_local-database.sql.gz 913.9KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251015_120001-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-15 12:00:02.869161
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251015_120001-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251015_120001-education_local-database.sql.gz 919.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251015_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-15 18:00:03.691929
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251015_180002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251015_180002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251016_120003-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-16 12:00:07.293014
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251016_120003-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251016_120003-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251016_180001-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-16 18:00:03.841287
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251016_180001-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251016_180001-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251017_120003-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-17 12:00:07.022241
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251017_120003-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251017_120003-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251021_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-21 12:00:05.311637
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251021_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251021_120002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251022_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-22 12:00:06.691266
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251022_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251022_120002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251022_180001-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-22 18:00:04.678380
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251022_180001-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251022_180001-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251023_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-23 12:00:05.597018
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251023_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251023_120002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251023_180003-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-23 18:00:08.843366
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251023_180003-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251023_180003-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251024_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-24 18:00:06.243293
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251024_180002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251024_180002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251027_120001-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-27 12:00:05.120287
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251027_120001-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251027_120001-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251027_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-27 18:00:07.936100
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251027_180002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251027_180002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251028_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-28 12:00:07.276918
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251028_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251028_120002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251029_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-29 12:00:06.409329
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251029_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251029_120002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251029_180001-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-29 18:00:04.217005
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251029_180001-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251029_180001-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251030_120001-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-30 12:00:04.723020
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251030_120001-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251030_120001-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251030_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-30 18:00:05.899834
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251030_180002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251030_180002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251031_120003-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-10-31 12:00:07.829371
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251031_120003-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251031_120003-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251103_120001-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-03 12:00:05.080608
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251103_120001-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251103_120001-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251103_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-03 18:00:06.574127
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251103_180002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251103_180002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251104_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-04 12:00:05.809037
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251104_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251104_120002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251104_180001-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-04 18:00:05.378010
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251104_180001-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251104_180001-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251105_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-05 12:00:07.722987
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251105_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251105_120002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251106_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-06 12:00:08.486102
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251106_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251106_120002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251107_120001-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-07 12:00:04.202100
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251107_120001-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251107_120001-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251108_120004-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-08 12:00:08.064031
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251108_120004-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251108_120004-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251110_120003-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-10 12:00:07.832677
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251110_120003-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251110_120003-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251114_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-14 12:00:06.091852
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251114_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251114_120002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251117_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-17 18:00:05.444857
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251117_180002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251117_180002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251119_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-19 12:00:06.645517
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251119_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251119_120002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251119_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-19 18:00:03.764295
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251119_180002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251119_180002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251120_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-20 12:00:06.084282
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251120_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251120_120002-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251120_180003-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-20 18:00:06.305010
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251120_180003-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251120_180003-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251121_120003-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-21 12:00:06.516070
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251121_120003-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251121_120003-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251124_120001-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-24 12:00:03.278948
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251124_120001-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251124_120001-education_local-database.sql.gz 929.8KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251124_180003-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-24 18:00:05.716043
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251124_180003-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251124_180003-education_local-database.sql.gz 906.3KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251126_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-26 12:00:06.451538
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251126_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251126_120002-education_local-database.sql.gz 913.4KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251126_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-26 18:00:04.795300
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251126_180002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251126_180002-education_local-database.sql.gz 915.6KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251127_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-27 12:00:05.525402
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251127_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251127_120002-education_local-database.sql.gz 915.6KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251127_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-27 18:00:06.801672
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251127_180002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251127_180002-education_local-database.sql.gz 915.6KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251128_120003-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-28 12:00:08.122615
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251128_120003-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251128_120003-education_local-database.sql.gz 915.6KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251128_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-11-28 18:00:06.451120
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251128_180002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251128_180002-education_local-database.sql.gz 915.6KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251201_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-12-01 12:00:05.452265
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251201_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251201_120002-education_local-database.sql.gz 915.6KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251201_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-12-01 18:00:05.498344
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251201_180002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251201_180002-education_local-database.sql.gz 915.6KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251202_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-12-02 12:00:03.851431
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251202_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251202_120002-education_local-database.sql.gz 915.6KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251203_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-12-03 12:00:06.529312
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251203_120002-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251203_120002-education_local-database.sql.gz 915.6KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251203_180003-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-12-03 18:00:07.116578
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251203_180003-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251203_180003-education_local-database.sql.gz 915.6KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251204_120003-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-12-04 12:00:06.876669
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251204_120003-education_local-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251204_120003-education_local-database.sql.gz 915.6KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251204_180002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-12-04 18:00:05.927942
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251204_180002-education_local-site_config_backup.json 149.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251204_180002-education_local-database.sql.gz 927.3KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251205_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-12-05 12:00:05.469339
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251205_120002-education_local-site_config_backup.json 149.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251205_120002-education_local-database.sql.gz 930.1KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251208_120003-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-12-08 12:00:06.527483
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251208_120003-education_local-site_config_backup.json 149.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251208_120003-education_local-database.sql.gz 930.1KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251209_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-12-09 12:00:05.816894
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251209_120002-education_local-site_config_backup.json 149.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251209_120002-education_local-database.sql.gz 930.1KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_f9e16f81a817db0a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f9e16f81a817db0a | /usr/bin/gzip >> ./education.local/private/backups/20251210_120002-education_local-database.sql.gz
+
+Backup Summary for education.local at 2025-12-10 12:00:04.383634
+Config  : /home/appi/SLCM/sites/education.local/private/backups/20251210_120002-education_local-site_config_backup.json 216.0B
+Database: /home/appi/SLCM/sites/education.local/private/backups/20251210_120002-education_local-database.sql.gz 993.7KiB
+Backup for Site education.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_5b2d008581109206 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5b2d008581109206 | /usr/bin/gzip >> ./interview_schedule/private/backups/20251210_120004-interview_schedule-database.sql.gz
+
+Backup Summary for interview_schedule at 2025-12-10 12:00:05.464235
+Config  : /home/appi/SLCM/sites/interview_schedule/private/backups/20251210_120004-interview_schedule-site_config_backup.json 127.0B
+Database: /home/appi/SLCM/sites/interview_schedule/private/backups/20251210_120004-interview_schedule-database.sql.gz 226.1KiB
+Backup for Site interview_schedule has been successfully completed
