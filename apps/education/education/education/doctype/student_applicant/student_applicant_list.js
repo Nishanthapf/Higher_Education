@@ -26,7 +26,7 @@ frappe.listview_settings['Student Applicant'] = {
     } else if (doc.application_status == 'Applied') {
       return [__('Applied'), 'orange', 'application_status,=,Applied']
     } else if (doc.application_status == 'Documents Verification') {
-      return [__('Documents Verification'), 'purple', 'application_status,=,Documents Verification']
+      return [__('Documents Verification'), 'pink', 'application_status,=,Documents Verification']
     } else if (doc.application_status == 'Approved') {
       return [__('Approved'), 'green', 'application_status,=,Approved']
     } else if (doc.application_status == 'Admitted') {
