@@ -43,3 +43,9 @@ Form Dict: {'new_page': '{"content":"[{\\"type\\":\\"header\\",\\"data\\":{\\"te
 2025-12-10 16:16:53,314 ERROR frappe New Exception collected in error log
 Site: education.local
 Form Dict: {'public': '0', 'new_widgets': '{"shortcut":[{"name":"shortcut-undefined-LDeIDluFaNfxBASRVFsp","label":"Student Register","link_to":"Student Applicant","doc_view":"List","color":"Grey","stats_filter":"[]","type":"DocType"}]}', 'blocks': '[{"id":"ivXGUB_1Gp","type":"header","data":{"text":"<span class=\\"h4\\">SLCM</span>","col":12}},{"id":"K_s47Ipb9h","type":"shortcut","data":{"shortcut_name":"Student Register","col":3}}]', 'cmd': 'frappe.desk.doctype.workspace.workspace.save_page'}
+2025-12-11 16:35:30,562 ERROR frappe New Exception collected in error log
+Site: education.local
+Form Dict: {'doctype': 'MeritTrac Test Result', 'filters': '[]', 'fields': '[]', 'distinct': 'false', 'cmd': 'frappe.desk.reportview.get_count'}
+2025-12-12 10:20:36,803 ERROR frappe New Exception collected in error log
+Site: education.local
+Form Dict: {'cmd': 'frappe.sessions.clear'}

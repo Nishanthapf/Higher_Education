@@ -1,0 +1,26 @@
+# Bench environment
+env/
+node_modules/
+logs/
+assets/
+
+# Python
+__pycache__/
+*.pyc
+
+# Frappe generated files
+sites/*/private/
+sites/*/locks/
+sites/*/public/files/
+sites/*/public/backups/
+sites/assets/
+config/pids/
+*.pid
+
+# Backup files
+*.sql.gz
+*.json.gz
+
+# OS files
+.DS_Store
+Thumbs.db
