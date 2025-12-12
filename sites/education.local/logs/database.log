@@ -3100,3 +3100,5 @@ ALTER TABLE `tabDocuments Verification Form` ADD COLUMN `std_xi_marksheet` text,
 ALTER TABLE `tabDocuments Verification Form` ADD COLUMN `transfer_certificate` text, ADD COLUMN `entrance_exam_admit_card` text, ADD COLUMN `entrance_exam_score_marksheet` text, ADD COLUMN `passport_size_photo` text
 2025-12-10 12:25:01,878 WARNING database DDL Query made to DB:
 ALTER TABLE `tabDocuments Verification Form` ADD COLUMN `student_name` varchar(140)
+2025-12-12 16:33:25,483 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` ADD COLUMN `custom_status` varchar(140)

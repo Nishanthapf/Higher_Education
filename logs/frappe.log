@@ -49,3 +49,18 @@ Form Dict: {'doctype': 'MeritTrac Test Result', 'filters': '[]', 'fields': '[]',
 2025-12-12 10:20:36,803 ERROR frappe New Exception collected in error log
 Site: education.local
 Form Dict: {'cmd': 'frappe.sessions.clear'}
+2025-12-12 18:17:16,244 ERROR frappe New Exception collected in error log
+Site: education.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Attendance","name":"new-student-attendance-nvurfwymrx","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"EDU-ATT-.YYYY.-","status":"Present","student":"EDU-STU-2025-00002","student_name":"Clinton A","student_mobile_number":null,"date":"2025-12-12","link_nvfk":"Bachelor of CS"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-12-12 18:17:23,254 ERROR frappe New Exception collected in error log
+Site: education.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Attendance","name":"new-student-attendance-nvurfwymrx","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"EDU-ATT-.YYYY.-","status":"Present","student":"EDU-STU-2025-00002","student_name":"Clinton A","student_mobile_number":null,"date":"2025-12-12","link_nvfk":"Bachelor of CS","student_group":"CS"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-12-12 18:17:33,612 ERROR frappe New Exception collected in error log
+Site: education.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Attendance","name":"new-student-attendance-nvurfwymrx","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"EDU-ATT-.YYYY.-","status":"Present","student":"EDU-STU-2025-00002","student_name":"Clinton A","student_mobile_number":null,"date":"2025-12-12","link_nvfk":"Bachelor of CS","student_group":"Hostel"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-12-12 18:17:40,146 ERROR frappe New Exception collected in error log
+Site: education.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Attendance","name":"new-student-attendance-nvurfwymrx","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"EDU-ATT-.YYYY.-","status":"Present","student":"EDU-STU-2025-00002","student_name":"Clinton A","student_mobile_number":null,"date":"2025-12-12","link_nvfk":null,"student_group":"Mathametics Discussion"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-12-12 18:17:48,088 ERROR frappe New Exception collected in error log
+Site: education.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Attendance","name":"new-student-attendance-nvurfwymrx","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"EDU-ATT-.YYYY.-","status":"Present","student":"EDU-STU-2025-00002","student_name":"Clinton A","student_mobile_number":null,"date":"2025-12-12","link_nvfk":"Bachelor of Computer Application","student_group":"Tfss2"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
